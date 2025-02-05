@@ -4,52 +4,31 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content=
-        "width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>PaoPao.com</title>
-<style>
-h1 {
-    color:skyblue;
-    font-family:Arial, Helvetica, sans-serif;
-    font-size: 50;
-}
-        body {font-family: "Times New Roman", Georgia, Serif;}
-        h1, h2, h3, h4, h5, h6 {
-          font-family: "Playfair Display";
-          letter-spacing: 5px;
-        }
-</style>
 </head>
 
 <body>
     <nav>
         <div class="heading">PaoPao.com</div>
-        <span class="sideMenuButton" 
-            onclick="openNavbar()">
-            &#9776
-        </span>
-
+        <span class="sideMenuButton" onclick="openNavbar()">&#9776;</span>
         <div class="navbar">
             <ul>
                 <li><a href="#Home">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </div>
     </nav>
 
-    <div class="sideNavigationBar" 
-        id="sideNavigationBar">
-        <a href="#" class="closeButton" 
-            onclick="closeNavbar()">
-            &#x274C
-        </a>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Contact</a>"
+    <div class="sideNavigationBar" id="sideNavigationBar">
+        <a href="#" class="closeButton" onclick="closeNavbar()">&#x274C;</a>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="service.html">Services</a>
+        <a href="contact.html">Contact</a>
     </div>
 
     <!-- Content -->
@@ -58,9 +37,7 @@ h1 {
             <h1>PaoPao List</h1>
         </div>
         <div class="side2">
-            <img src=
-"cat.JFIF"
-                width="500">
+            <img src="cat.JFIF" alt="Siopao Image" width="500">
         </div>
     </div>
 
@@ -69,45 +46,41 @@ h1 {
             <div class="title">
                 <span>Siopao</span>
                 <p>
-                    Siopao (Tagalog pronunciation: [ˈʃopaʊ]), is a Philippine steamed bun with various fillings. It is the indigenized version of the Fujianese baozi, introduced to the Philippines by Hokkien immigrants during the Spanish colonial period. It is a popular snack in the Philippines and is commonly sold by bakeries and restaurants. 
+                    Siopao (Tagalog pronunciation: [ˈʃopaʊ]), is a Philippine steamed bun with various fillings. It is the indigenized version of the Fujianese baozi, introduced to the Philippines by Hokkien immigrants during the Spanish colonial period.
                 </p>
             </div>
             <div class="boxes">
                 <div class="box">
-                    <div class="topic">
-                        <a href="" target="_blank">
-                            Siopao Asado
-                        </a>
+                    <div class="image">
+                        <img src="asado.WEBP" alt="Siopao Asado">
                     </div>
-                    <p>
-                        The classic variant siopao "asado" often uses grilled belly of porl spread with honey.
-                    </p>
+                    <div class="topic">
+                        <a href="" target="_blank">Siopao Asado</a>
+                    </div>
+                    <p>The classic variant siopao "asado" often uses grilled belly of pork spread with honey.</p>
                 </div>
                 <div class="box">
-
-                    <div class="topic">
-                        <a href="" target="_blank">
-                            Siopao Bola-Bola
-                        </a>
+                    <div class="image">
+                        <img src="bola-bola.WEBP" alt="Siopao Bola-Bola">
                     </div>
-                    <p>
-                        The siopao "bola-bola" contains minced prok.
-                    </p>
+                    <div class="topic">
+                        <a href="" target="_blank">Siopao Bola-Bola</a>
+                    </div>
+                    <p>The siopao "bola-bola" contains minced pork.</p>
                 </div>
-
                 <div class="box">
-                    <div class="topic">
-                        <a href="" target="_blank">
-                            Toasted Siopao
-                        </a>
+                    <div class="image">
+                        <img src="toasted.jpg" alt="Toasted Siopao">
                     </div>
-                    <p>
-                        Well known in the Bicol region since the 1970s, Toasted Siopao is made from slightly hard dough, filled with ground or chopped pork meat, onions, potato, and a slice of boiled egg. Baked until crispy and golden brown in color.
-                    </p>
+                    <div class="topic">
+                        <a href="" target="_blank">Toasted Siopao</a>
+                    </div>
+                    <p>Known in the Bicol region since the 1970s, Toasted Siopao is made from hard dough, filled with pork, onions, and a slice of boiled egg.</p>
                 </div>
             </div>
         </div>
     </section>
+    
 
     <section class="contact" id="contact">
         <div class="content">
@@ -116,69 +89,48 @@ h1 {
                 <div class="input1">
                     <div class="label1">Your Name</div>
                     <div class="input2">
-                        <input type="text" 
-                            placeholder="Enter your Name here">
+                        <input type="text" placeholder="Enter your Name here">
                     </div>
-                    <div class="label1">
-                        <label>Your Order</label>
-                    </div>
+                    <div class="label1">Your Order</div>
                     <div class="input2">
-                        <input type="text" 
-                            placeholder="Enter your oder here">
+                        <input type="text" placeholder="Enter your order here">
                     </div>
-                    <div class="label1">
-                        <label>Mobile Number</label>
-                    </div>
+                    <div class="label1">Mobile Number</div>
                     <div class="input2">
-                        <input type="text" 
-                            placeholder="Enter your mobile number here">
+                        <input type="text" placeholder="Enter your mobile number here">
                     </div>
-                    <div class="label1">
-                        <label>Location</label>
-                    </div>
-                    <div>
-                        <input type="text"
-                            placeholder="Enter your location here">
+                    <div class="label1">Location</div>
+                    <div class="input2">
+                        <input type="text" placeholder="Enter your location here">
                     </div>
                 </div>
                 <div class="input3">
                     <div class="rightside1">
                         <div class="title1">
-                            <span>
-                                Contact Us
-                            </span>
+                            <span>Contact Us</span>
                         </div>
                         <div class="content1">
-                            A-143, 9th Floor, Sovereign 
-                            Corporate Tower, Sector-136, 
-                            Noida, Uttar Pradesh - 201305
+                            A-143, 9th Floor, Sovereign Corporate Tower, Sector-136, Noida, Uttar Pradesh - 201305
                         </div>
                         <div class="title1">
                             <span>More Information</span>
                         </div>
                         <div class="content1">
-                            Greetings to all the siopao lovers out there!
-                            We welcome you to the platform where we
-                            sell all kinds of siopao right at your door step. 
-                            Thank you for choosing and supporting us!
+                            Greetings to all the siopao lovers out there! We welcome you to the platform where we sell all kinds of siopao right at your doorstep. Thank you for choosing and supporting us!
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
     <!-- Footer section -->
     <footer>
         <div class="footer">
-            <span>
-                Created By
-                <a href="https://www.paopao.org/" 
-                    target="_blank">
-                    PaoPao.inc
-                </a>
-            </span>
+            <span>Created By <a href="https://www.paopao.org/" target="_blank">PaoPao.inc</a></span>
         </div>
     </footer>
+
     <script src="index.js"></script>
 </body>
 

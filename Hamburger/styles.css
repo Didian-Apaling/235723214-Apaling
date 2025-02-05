@@ -1,0 +1,413 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arial", sans-serif;
+}
+
+body {
+    background-color: #f4f6f9;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Center all text inside h1 tags */
+h1 {
+    color: skyblue;
+    font-family: "Playfair Display", serif;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #2c3e50;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.heading {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center; /* Center text in the heading */
+    flex: 1;
+}
+
+.sideMenuButton {
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    flex: 1;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    justify-content: center; /* Center the navbar items */
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Side Navigation for Mobile */
+.sideNavigationBar {
+    position: fixed;
+    top: 0;
+    right: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #34495e;
+    transition: 0.3s;
+    padding-top: 50px;
+}
+
+.sideNavigationBar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 22px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+}
+
+.sideNavigationBar a:hover {
+    background-color: #2ecc71;
+}
+
+.sideNavigationBar .closeButton {
+    font-size: 36px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Content Section */
+.line {
+    display: flex;
+    justify-content: center;
+    padding: 80px 30px 30px;
+    align-items: center;
+    background-color: #ecf0f1;
+    flex-wrap: wrap;
+    text-align: center; /* Center content inside line */
+}
+
+.line .side1 h1 {
+    font-size: 40px;
+    font-family: "Playfair Display", serif;
+    text-align: center;
+}
+
+.line .side2 img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* About Section */
+.about {
+    padding: 50px 30px;
+    background-color: #fff;
+    text-align: center; /* Center text in about section */
+}
+
+.about .title {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.about p {
+    font-size: 18px;
+    color: #7f8c8d;
+    line-height: 1.6;
+    margin-bottom: 50px;
+}
+
+.boxes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.box {
+    background-color: #f1f2f6;
+    padding: 20px;
+    width: 30%;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+    text-align: center; /* Center text inside box */
+}
+
+.box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.topic a {
+    font-size: 20px;
+    color: #2c3e50;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.topic a:hover {
+    color: #3498db;
+}
+
+/* Contact Section */
+.contact {
+    background-color: #ecf0f1;
+    padding: 50px 30px;
+    text-align: center; /* Center text in contact section */
+}
+
+.contact .title {
+    font-size: 30px;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.contactMenu {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.input1 {
+    flex: 1;
+    text-align: center; /* Center content in input1 */
+}
+
+.input2 input {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    transition: border-color 0.3s;
+    text-align: center; /* Center text in input fields */
+}
+
+.input2 input:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+/* Footer */
+footer {
+    background-color: #34495e;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        display: none;
+    }
+
+    .sideMenuButton {
+        display: block;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    .sideNavigationBar {
+        right: 0;
+    }
+
+    .line {
+        flex-direction: column;
+        text-align: center; /* Center content on smaller screens */
+    }
+
+    .boxes {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .box {
+        width: 80%; /* Ensure the boxes are centered and have more space */
+    }
+}
+/* Box styling */
+.box {
+    background-color: #f1f2f6;
+    padding: 20px;
+    width: 30%;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+    text-align: center; /* Center text inside box */
+    margin-bottom: 30px; /* Adds space between boxes */
+}
+
+.box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Box styling */
+.box {
+    background-color: #f1f2f6;
+    padding: 20px;
+    width: 30%;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+    text-align: center; /* Center text inside box */
+    margin-bottom: 30px; /* Adds space between boxes */
+}
+
+.box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Image within each box with fixed 500x500px size */
+.box .image img {
+    width: 500px;
+    height: 500px;
+    border-radius: 8px;
+    margin-bottom: 15px; /* Adds space below the image */
+    object-fit: cover; /* Ensures the image covers the space without distortion */
+}
+
+/* Topic styling for each box */
+.topic a {
+    font-size: 20px;
+    color: #2c3e50;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.topic a:hover {
+    color: #3498db;
+}
+
+/* Ensures the layout adjusts nicely */
+.boxes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+    .box {
+        width: 100%; /* Stacks the boxes in a column on smaller screens */
+    }
+}
+
+/* General Styling for Services Section */
+.services {
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.services h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #3498db;
+}
+
+.services p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* Container for the services boxes */
+.services-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* Individual Service Box Styling */
+.service-box {
+    background-color: #fff;
+    padding: 20px;
+    width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.service-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.service-box h2 {
+    font-size: 24px;
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+.service-box p {
+    font-size: 16px;
+    color: #777;
+}
+
+/* Image Styling */
+.service-box .image img {
+    width: 100%;
+    height: 200px;
+    border-radius: 8px;
+    object-fit: cover; /* Ensures images fit in the container without distortion */
+    margin-bottom: 15px; /* Adds space below the image */
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .services-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-box {
+        width: 80%;
+        mar
