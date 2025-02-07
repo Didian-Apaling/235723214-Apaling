@@ -1,4 +1,4 @@
-/* Reset some default styles */
+
 * {
     margin: 0;
     padding: 0;
@@ -7,28 +7,28 @@
 }
 
 body {
-    background-color: #f4f6f9;
+    background-color: #579afd;
     font-size: 16px;
-    color: #333;
+    color: #030303;
 }
 
-/* Center all text inside h1 tags */
+
 h1 {
-    color: skyblue;
+    color: rgb(0, 0, 0);
     font-family: "Playfair Display", serif;
     font-size: 50px;
     text-align: center;
     margin-bottom: 20px;
 }
 
-/* Navigation Bar */
+
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 30px;
-    background-color: #2c3e50;
-    color: #fff;
+    background-color: #5dabfa;
+    color: #ffffff;
     position: fixed;
     width: 100%;
     top: 0;
@@ -38,7 +38,7 @@ nav {
 .heading {
     font-size: 24px;
     font-weight: bold;
-    text-align: center; /* Center text in the heading */
+    text-align: center; 
     flex: 1;
 }
 
@@ -57,7 +57,7 @@ nav {
 .navbar ul {
     display: flex;
     list-style: none;
-    justify-content: center; /* Center the navbar items */
+    justify-content: center; 
 }
 
 .navbar ul li {
@@ -72,7 +72,7 @@ nav {
     letter-spacing: 1px;
 }
 
-/* Side Navigation for Mobile */
+
 .sideNavigationBar {
     position: fixed;
     top: 0;
@@ -106,7 +106,7 @@ nav {
     cursor: pointer;
 }
 
-/* Content Section */
+
 .line {
     display: flex;
     justify-content: center;
@@ -114,7 +114,7 @@ nav {
     align-items: center;
     background-color: #ecf0f1;
     flex-wrap: wrap;
-    text-align: center; /* Center content inside line */
+    text-align: center; 
 }
 
 .line .side1 h1 {
@@ -129,11 +129,11 @@ nav {
     border-radius: 10px;
 }
 
-/* About Section */
+
 .about {
     padding: 50px 30px;
     background-color: #fff;
-    text-align: center; /* Center text in about section */
+    text-align: center; 
 }
 
 .about .title {
@@ -157,13 +157,13 @@ nav {
 }
 
 .box {
-    background-color: #f1f2f6;
+    background-color: #8fa5ff;
     padding: 20px;
     width: 30%;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: 0.3s;
-    text-align: center; /* Center text inside box */
+    text-align: center; 
 }
 
 .box:hover {
@@ -180,14 +180,14 @@ nav {
 }
 
 .topic a:hover {
-    color: #3498db;
+    color: #76c6fc;
 }
 
-/* Contact Section */
+
 .contact {
     background-color: #ecf0f1;
     padding: 50px 30px;
-    text-align: center; /* Center text in contact section */
+    text-align: center; 
 }
 
 .contact .title {
@@ -205,7 +205,7 @@ nav {
 
 .input1 {
     flex: 1;
-    text-align: center; /* Center content in input1 */
+    text-align: center;
 }
 
 .input2 input {
@@ -216,15 +216,15 @@ nav {
     border: 2px solid #ccc;
     border-radius: 8px;
     transition: border-color 0.3s;
-    text-align: center; /* Center text in input fields */
+    text-align: center; 
 }
 
 .input2 input:focus {
-    border-color: #3498db;
+    border-color: #85ceff;
     outline: none;
 }
 
-/* Footer */
+
 footer {
     background-color: #34495e;
     padding: 20px;
@@ -238,7 +238,7 @@ footer a {
     font-weight: bold;
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
     .navbar {
         display: none;
@@ -256,7 +256,7 @@ footer a {
 
     .line {
         flex-direction: column;
-        text-align: center; /* Center content on smaller screens */
+        text-align: center; 
     }
 
     .boxes {
@@ -265,10 +265,10 @@ footer a {
     }
 
     .box {
-        width: 80%; /* Ensure the boxes are centered and have more space */
+        width: 80%; 
     }
 }
-/* Box styling */
+
 .box {
     background-color: #f1f2f6;
     padding: 20px;
@@ -276,8 +276,8 @@ footer a {
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: 0.3s;
-    text-align: center; /* Center text inside box */
-    margin-bottom: 30px; /* Adds space between boxes */
+    text-align: center; 
+    margin-bottom: 30px; 
 }
 
 .box:hover {
@@ -285,7 +285,7 @@ footer a {
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
 }
 
-/* Box styling */
+
 .box {
     background-color: #f1f2f6;
     padding: 20px;
@@ -293,8 +293,8 @@ footer a {
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: 0.3s;
-    text-align: center; /* Center text inside box */
-    margin-bottom: 30px; /* Adds space between boxes */
+    text-align: center; 
+    margin-bottom: 30px; 
 }
 
 .box:hover {
@@ -302,16 +302,16 @@ footer a {
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
 }
 
-/* Image within each box with fixed 500x500px size */
+
 .box .image img {
     width: 500px;
     height: 500px;
     border-radius: 8px;
-    margin-bottom: 15px; /* Adds space below the image */
-    object-fit: cover; /* Ensures the image covers the space without distortion */
+    margin-bottom: 15px; /
+    object-fit: cover; 
 }
 
-/* Topic styling for each box */
+
 .topic a {
     font-size: 20px;
     color: #2c3e50;
@@ -321,10 +321,10 @@ footer a {
 }
 
 .topic a:hover {
-    color: #3498db;
+    color: #81ccfd;
 }
 
-/* Ensures the layout adjusts nicely */
+
 .boxes {
     display: flex;
     justify-content: center;
@@ -334,21 +334,21 @@ footer a {
 
 @media (max-width: 768px) {
     .box {
-        width: 100%; /* Stacks the boxes in a column on smaller screens */
+        width: 100%; 
     }
 }
 
-/* General Styling for Services Section */
+
 .services {
     padding: 50px 20px;
-    background-color: #f4f4f4;
+    background-color: #82bff8;
     text-align: center;
 }
 
 .services h1 {
     font-size: 36px;
     margin-bottom: 20px;
-    color: #3498db;
+    color: #000000;
 }
 
 .services p {
@@ -357,7 +357,7 @@ footer a {
     margin-bottom: 30px;
 }
 
-/* Container for the services boxes */
+
 .services-list {
     display: flex;
     justify-content: center;
@@ -365,7 +365,7 @@ footer a {
     flex-wrap: wrap;
 }
 
-/* Individual Service Box Styling */
+
 .service-box {
     background-color: #fff;
     padding: 20px;
@@ -392,25 +392,23 @@ footer a {
     color: #777;
 }
 
-/* Image Styling */
+
 .service-box .image img {
     width: 100%;
     height: 200px;
     border-radius: 8px;
-    object-fit: cover; /* Ensures images fit in the container without distortion */
-    margin-bottom: 15px; /* Adds space below the image */
+    object-fit: cover; 
+    margin-bottom: 15px; 
 }
 
-/* Responsiveness */
+
 @media (max-width: 768px) {
     .services-list {
         flex-direction: column;
         align-items: center;
     }
 
-    .service-box {
-        width: 80%;
-        mar
+
         body {
             font-family: 'Poppins', sans-serif;
             margin: 0;
@@ -445,150 +443,261 @@ footer a {
         .navbar ul li a:hover {
             color: #ff9800;
         }
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: 'Roboto', sans-serif; /* Modern font */
-            background-image: url('path/to/your-image.jpg'); /* Replace with your image path */
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-            color: #fff;
-        }
-        
-        nav {
-            background: rgba(0, 0, 0, 0.5); /* Transparent navbar for modern effect */
-            padding: 15px 30px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 10;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* subtle shadow for the navbar */
-        }
-        
-        nav .heading {
-            font-size: 26px;
-            font-weight: bold;
-        }
-        
-        .navbar ul {
-            list-style: none;
-            display: flex;
-        }
-        
-        .navbar ul li {
-            margin-left: 25px;
-        }
-        
-        .navbar ul li a {
-            text-decoration: none;
-            color: #fff;
-            font-size: 18px;
-            letter-spacing: 0.5px;
-            text-transform: uppercase;
-            transition: color 0.3s ease; /* smooth color transition on hover */
-        }
-        
-        .navbar ul li a:hover {
-            color: #ff6f61; /* Hover effect color */
-        }
-        
-        .sideMenuButton {
-            font-size: 30px;
-            cursor: pointer;
-            display: none;
-            color: white;
-        }
-        
-        .contact-form {
-            max-width: 700px;
-            margin: 100px auto 50px auto; /* Add space for the navbar */
-            background: rgba(255, 255, 255, 0.9); /* Lighter background for the form */
-            padding: 40px;
-            border-radius: 15px;
-            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
-            transition: all 0.3s ease-in-out; /* Smooth transition on hover */
-        }
-        
-        .contact-form:hover {
-            transform: scale(1.02); /* Slight scale effect when hovering over the form */
-        }
-        
-        .contact-form h2 {
-            text-align: center;
-            margin-bottom: 20px;
-            font-size: 28px;
-            font-weight: 600;
-            color: #333;
-        }
-        
-        .contact-form label {
-            display: block;
-            font-size: 16px;
-            font-weight: 500;
-            margin-top: 15px;
-            color: #555;
-        }
-        
-        .contact-form input,
-        .contact-form textarea {
-            width: 100%;
-            padding: 15px;
-            margin-top: 8px;
-            border: 2px solid #ccc;
-            border-radius: 8px;
-            font-size: 16px;
-            background-color: #f9f9f9;
-            transition: border 0.3s ease;
-        }
-        
-        .contact-form input:focus,
-        .contact-form textarea:focus {
-            border-color: #ff6f61; /* Border color on focus */
-            outline: none;
-        }
-        
-        .contact-form button {
-            width: 100%;
-            padding: 15px;
-            margin-top: 20px;
-            background: #ff6f61;
-            color: white;
-            border: none;
-            border-radius: 8px;
-            font-size: 18px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-        
-        .contact-form button:hover {
-            background: #ff3b2b; /* Darker shade on hover */
-        }
-        
-        @media screen and (max-width: 768px) {
-            .sideMenuButton {
-                display: block;
-            }
-        
-            .navbar ul {
-                display: none;
-            }
-        
-            .contact-form {
-                padding: 30px 20px;
-            }
-        
-            .contact-form h2 {
-                font-size: 24px;
-            }
-        }
-        
-        
+    }
+    
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #333;
+    padding: 15px 0;
+    color: #fff;
+    text-align: center;
+}
+
+header .logo a {
+    text-decoration: none;
+}
+
+header .logo-img {
+    width: 150px; 
+    height: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center; 
+    margin-top: 10px;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav ul li a.active {
+    font-weight: bold;
+}
+
+.menu-toggle {
+    display: none;
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.contact-section {
+    background-color: #6ca8ec;
+    padding: 40px 0;
+}
+
+.contact-section h1 {
+    text-align: center; 
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+
+.contact-item {
+    text-align: center; 
+}
+
+.contact-item h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.contact-item .contact-icon {
+    width: 50px;  
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.contact-item a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center; 
+}
+
+.contact-form h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .contact-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+
+    nav ul li a {
+        font-size: 18px;
+    }
+
+    .container {
+        width: 90%;
+    }
+}
+
+.about-section {
+    padding: 60px 0;
+    background-color: #84bdff;
+}
+
+.about-section h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.about-section h2 {
+    text-align: center;      
+    font-size: 28px;
+    margin-bottom: 40px;     
+}
+
+.about-team {
+    display: flex;
+    justify-content: center;  
+    align-items: center;      
+    flex-wrap: wrap;          
+    gap: 30px;                
+}
+
+.about-team .team-member {
+    width: 300px;             
+    text-align: center;      
+}
+
+.about-team .team-member img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;  
+    margin-bottom: 20px;  
+}
+
+.about-team h3 {
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+.about-team p {
+    font-size: 16px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .about-team {
+        flex-direction: column;  
+    }
+}
